@@ -6,27 +6,65 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/weather"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1"
-        tools:text="there is wiiiter"
-        android:background="@color/colorPrimary"
-        android:textSize="54sp"
-        android:textColor="@android:color/black"
-        android:textStyle="normal|bold"
-        android:padding="@dimen/activity_horizontal_margin"
-        android:textAlignment="center"/>
+        android:layout_weight="2"
+        android:orientation="vertical"
+        android:paddingLeft="48dp"
+        android:background="@color/colorPrimary">
 
-    <TextView
+        <TextView
+            android:id="@+id/weather"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="textStart"
+            android:textColor="@android:color/black"
+            android:textSize="90sp"
+            android:textStyle="normal|bold"
+            tools:text="21°"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="textStart"
+            android:textColor="@android:color/black"
+            android:textSize="90sp"
+            android:textStyle="normal|bold"
+            tools:text="rainy"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1"
-        android:text="there is will be a loot info "
-        android:textSize="24sp"
-        android:padding="@dimen/activity_horizontal_margin"
-        android:textStyle="normal|italic"
-        android:textAlignment="center"/>
+        android:layout_weight="3"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/location_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/activity_horizontal_margin"
+            android:text="Monday "
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="normal|italic"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/activity_horizontal_margin"
+            android:text="21° 19° "
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="normal|italic"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/location_view"
+            android:layout_toEndOf="@+id/location_view"/>
+
+
+    </RelativeLayout>
 
 </LinearLayout>
