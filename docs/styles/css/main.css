@@ -1,0 +1,28 @@
+body {
+  font-family: Helvetica, sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  width: 40vw;
+  margin: 5em auto; }
+
+a, a:visited {
+  text-decoration: none;
+  color: #258aaf; }
+
+a:hover {
+  color: black; }
+
+#header {
+  margin-bottom: 5em; }
+  #header p {
+    font-style: italic;
+    font-size: 12px; }
+
+.container {
+  padding: 1em; }
+
+@media screen and (max-width: 800px) {
+  body {
+    width: 80vw; } }
+
+/*# sourceMappingURL=main.css.map */
