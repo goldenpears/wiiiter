@@ -19,6 +19,7 @@ import butterknife.ButterKnife;
 
 public class WeatherNowFragment extends Fragment {
   private Weather weather;
+
   @BindView(R.id.weather) TextView weatherNow;
 
   @Override
