@@ -3,26 +3,48 @@ body {
   font-weight: 300;
   font-size: 14px;
   width: 40vw;
-  margin: 5em auto; }
+  margin: 4em auto;
+  background-color: white; }
 
 a, a:visited {
   text-decoration: none;
-  color: #258aaf; }
-
-a:hover {
   color: black; }
 
+a:hover {
+  color: #8fffb3; }
+
+p {
+  font-size: 12px;
+  color: grey;
+  margin: 6px 0; }
+
 #header {
-  margin-bottom: 5em; }
+  margin-bottom: 5em;
+  color: #8fffb3; }
+  #header h1 {
+    font-size: 9em;
+    font-family: "Roboto", Helvetica, sans-serif;
+    margin: 0; }
   #header p {
+    @extends: p;
+    color: lightgray;
     font-style: italic;
-    font-size: 12px; }
+    text-align: center; }
 
 .container {
-  padding: 1em; }
+  padding: 1em 0; }
+  .container span {
+    color: black;
+    font-weight: bold; }
 
-@media screen and (max-width: 800px) {
+section {
+  padding: 4em 0; }
+
+@media screen and (max-width: 700px) {
   body {
-    width: 80vw; } }
+    width: 80vw; }
+
+  #header h1 {
+    font-size: 5em; } }
 
 /*# sourceMappingURL=main.css.map */

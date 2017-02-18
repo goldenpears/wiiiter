@@ -1,26 +1,45 @@
 @import variables
+@import colors
 
 body
   font-family: Helvetica, sans-serif
   font-weight: 300
   font-size: 14px
   width: 40vw
-  margin: 5em auto
+  margin: 4em auto
+  background-color: $bg-color
 
 a, a:visited
   text-decoration: none
-  color: #258aaf
+  color: $links-color
 a:hover
-  color: black
+  color: $links-hover
+
+p
+  font-size: 12px
+  color: $primary-text-color
+  margin: 6px 0
 
 #header
   margin-bottom: 5em
+  color: $header-color
+  h1
+    font-size: 9em
+    font-family: 'Roboto', Helvetica, sans-serif
+    margin: 0
   p
+    @extends: p
+    color: $secondary-text-color
     font-style: italic
-    font-size: 12px
+    text-align: center
 
 .container
-  padding: 1em
+  padding: 1em 0
+  span
+    color: $title-color
+    font-weight: bold
 
-@import colours
+section
+  padding: 4em 0
+
 @import media
