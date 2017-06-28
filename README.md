@@ -1,7 +1,7 @@
 # wiiiter
-wiiiter is going to try it best to tell you about the weather
+weather app
 
-🙌  for now app is completely unfinished
-
-#concept
-![concept](http://locovna.com/img/weather.png)
+## how to start?
+- `git clone https://github.com/goldenpears/wiiiter.git`
+- import `wiiiter` folder via Android Studio
+- run on the emulator or your device in the debug mode
